@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coffee Masters</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="brand-name">
+      <img
+        src="https://btholt.github.io/complete-intro-to-web-dev-v3/images/coffee_masters_logo.png"
+        alt="brand-coffee"
+      />
+      <h1 class="title">Coffee Masters</h1>
+    </header>
+
+    <main class="main-container">
+      <div class="main-container-cards">
+        <section class="item-container">
+          <h3 class="products-titles">items</h3>
+          <ul class="list-items">
+            <li class="item-container-products">
+              <div class="item-number">1x</div>
+              <div class="item-product">
+                <div>Cappuchino</div>
+                <div class="sub-item">Lite Foam</div>
+              </div>
+              <div class="item-price">$3.35</div>
+            </li>
+            <li class="item-container-products horizontal-border">
+              <div class="item-number">1x</div>
+              <div class="item-product">
+                <div>Cappuchino</div>
+                <div class="sub-item">Lite Milk</div>
+                <div class="sub-item">Double espresso</div>
+              </div>
+              <div class="item-price">$3.85</div>
+            </li>
+
+            <li class="item-container-products">
+              <div class="item-number">1x</div>
+              <div class="item-product">
+                <div>Croissant</div>
+                <div class="sub-item">Butter</div>
+              </div>
+              <div class="item-price">$2.45</div>
+            </li>
+          </ul>
+        </section>
+
+        <section class="user-order-name">
+          <form action="">
+            <section class="name-order">
+              <h3 class="products-titles">Name</h3>
+              <fieldset>
+                <legend>Name for order</legend>
+                <label for="name">
+                  <input
+                    name="username"
+                    type="text"
+                    id="name"
+                    placeholder="Ford Prefect"
+                  />
+                </label>
+              </fieldset>
+            </section>
+            <section class="payment">
+              <h3 class="products-titles">Payment</h3>
+              <fieldset>
+                <legend>Card number</legend>
+                <label for="card-number">
+                  <input name="card-number" type="number" id="card-number" />
+                </label>
+              </fieldset>
+              <fieldset class="password-card">
+                <legend>CCv Number</legend>
+                <label for="password-number">
+                  <input
+                    name="password-number"
+                    type="number"
+                    id="password-number"
+                  />
+                </label>
+              </fieldset>
+            </section>
+          </form>
+        </section>
+      </div>
+
+      <div class="main-container-cards card-payment">
+        <div class="final-payment">
+          <div class="final-payment-item">
+            <h5>Subtotal:</h5>
+            <div>$9.65</div>
+          </div>
+          <div class="final-payment-item">
+            <h5>Tax:</h5>
+            <div>$0.82</div>
+          </div>
+          <div class="final-payment-item">
+            <h5 class="total-payment">Total</h5>
+            <div class="total-payment">$10.47</div>
+          </div>
+        </div>
+
+        <footer class="footer">
+          <p>Place order</p>
+        </footer>
+      </div>
+    </main>
+  </body>
+</html>
